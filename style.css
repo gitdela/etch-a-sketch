@@ -1,0 +1,18 @@
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.eas-pad {
+    box-sizing: border-box;
+    width: 700px;
+}
+
+.eas-item {
+    text-align: center;
+}
+
+.eas-draw-space {
+    width: 700px;
+    border: 1px solid black;
+}
