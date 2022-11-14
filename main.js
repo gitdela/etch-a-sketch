@@ -1,3 +1,5 @@
+let color = 'black';
+
 function populateBoard(size) {
 
     const easDrawSpace = document.querySelector('.eas-draw-space');
@@ -17,16 +19,32 @@ function populateBoard(size) {
     }   
 }
 
+populateBoard(16);
+
 function colorSquare() {
-        this.style.backgroundColor = 'black';
+    if(color === 'random') {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    } else {
+        this.style.backgroundColor = color;
+    }
 }
 
-populateBoard(16); 
+function changeColor(newColor) {
+    color = newColor;
+}
+
+function reset() {
+    const easDrawSpace = document.querySelector('.eas-draw-space');
+    const squares = easDrawSpace.querySelectorAll('div');
+    squares.forEach((square) => {
+        square.style.backgroundColor = 'white';
+    })
+}
 
 function changeSize(newSize) {
     if (newSize <= 100) {
         populateBoard(newSize);
     } else {
-        console.log('Size is too large');
+        alert('Size is too large');
     }
 }

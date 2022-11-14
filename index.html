@@ -10,27 +10,28 @@
 <body>
     <main class="main-content">
         <div class="eas-pad eas-item">
-            <h2 class="eas-title eas-item">ETCH A SKETCH</h2>
+            <h1 class="eas-title eas-item">ETCH A SKETCH</h1>
             <div class="eas-input-button eas-item">
-                <input type="text" placeholder="Change Grid Size" value="16" onchange="changeSize(this.value)">
+                <input type="text" placeholder="Change Grid Size" onchange="changeSize(this.value)">
                 <button>Set Size</button>
             </div>
             <div class="space-container">
                 <div class="eas-draw-space eas-item"></div>
             </div>
             <div class="eas-buttons eas-item">
-                <button>Black</button>
-                <button>Grey</button>
-                <button>Random</button>
-                <button>Eraser</button>
+                <button onclick="changeColor('black')">Black</button>
+                <button onclick="changeColor('grey')">Grey</button>
+                <button onclick="changeColor('random')">Random</button>
+                <button onclick="changeColor('white')">Eraser</button>
             </div>
             <div  class="eas-reset eas-item">
-                <button>RESET</button>
+                <button onclick="reset()">RESET</button>
             </div>
         </div>
-    </main>
-    <footer class="eas-footer">Developed by Ken Nartey</footer>
-    
+    </main> 
+    <footer>
+        <div class="eas-footer">Developed by Ken Nartey</div>
+    </footer>
 </body>
 <script src="main.js"></script>
 </html>
