@@ -6,5 +6,9 @@ for (let i = 0; i < 256; i++) {
     easDrawSpace.style.gridTemplateColumns = 'repeat(16, 1fr)';
     // easDrawSpace.style.gridTemplateRows = 'repeat(16, 1fr)';
     easDrawSpace.appendChild(square);
-    // squares.forEach(square) {'mouseover', }
+    square.addEventListener('mouseover', colorSquare);
+}
+
+function colorSquare() {
+    this.style.backgroundColor = 'black';
 }
