@@ -1,18 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
 .main-content {
     display: flex;
     justify-content: center;
 }
 
 .eas-pad {
-    box-sizing: border-box;
     width: 700px;
 }
 
-.eas-item {
+.eas-item, .eas-footer {
     text-align: center;
 }
 
+.space-container {
+    display: flex;
+    justify-content: center;
+}
+
 .eas-draw-space {
-    width: 700px;
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px solid black;
+    display: grid;
+}
+
+.eas-buttons {
+    margin-bottom: 15px;
+}
+
+.eas-reset {
+    margin-bottom: 20px;
 }
