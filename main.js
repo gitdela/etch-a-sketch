@@ -1,4 +1,3 @@
-
 function populateBoard(size) {
 
     const easDrawSpace = document.querySelector('.eas-draw-space');
@@ -25,5 +24,9 @@ function colorSquare() {
 populateBoard(16); 
 
 function changeSize(newSize) {
-    populateBoard(newSize);
+    if (newSize <= 100) {
+        populateBoard(newSize);
+    } else {
+        console.log('Size is too large');
+    }
 }
