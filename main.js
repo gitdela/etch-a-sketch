@@ -37,7 +37,7 @@ function reset() {
     const easDrawSpace = document.querySelector('.eas-draw-space');
     const squares = easDrawSpace.querySelectorAll('div');
     squares.forEach((square) => {
-        square.style.backgroundColor = 'white';
+        square.style.backgroundColor = '#0151CC';
     })
 }
 
