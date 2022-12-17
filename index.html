@@ -12,20 +12,20 @@
         <div class="eas-pad eas-item">
             <h1 class="eas-title eas-item">ETCH A SKETCH</h1>
             <div class="eas-input-button eas-item">
-                <input type="text" placeholder="Change Grid Size" onchange="changeSize(this.value)">
-                <button>Set Size</button>
+                <input class = 'input-field' type="text" placeholder="Change Grid Size" onchange="changeSize(this.value)">
+                <button class="set-size-but">Set Size</button>
             </div>
             <div class="space-container">
                 <div class="eas-draw-space eas-item"></div>
             </div>
             <div class="eas-buttons eas-item">
                 <button class = 'eas-button' onclick="changeColor('black')">Black</button>
-                <button class = 'eas-button' onclick="changeColor('grey')">Grey</button>
+                <button class = 'eas-button' onclick="changeColor('magenta')">Pink</button>
                 <button class = 'eas-button' onclick="changeColor('random')">Random</button>
                 <button class = 'eas-button' onclick="changeColor('white')">Eraser</button>
             </div>
-            <div  class="eas-reset eas-item">
-                <button onclick="reset()">RESET</button>
+            <div  class="eas-item">
+                <button class="eas-reset" onclick="reset()">RESET</button>
             </div>
         </div>
     </main> 

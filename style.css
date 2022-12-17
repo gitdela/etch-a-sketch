@@ -7,13 +7,32 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #a1c3ff;
-    min-height: 99vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
+}
+
+.set-size-but {
+    background-color: rgb(38, 56, 80);
+    color: rgb(255, 255, 255);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;   
+}
+
+.input-field {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
 }
 
 footer {
+    padding: 3px;
     margin-top: auto;
+    background-color: rgb(38, 56, 80);
+    color: black;
 }
 
 .main-content {
@@ -49,16 +68,25 @@ footer {
 }
 
 .eas-button {
-    width: 90px;
-    background-color: #0151cc;
+    width: 120px;
+    background-color: black;
     padding: 8px;
     color: white;
     border-radius: 5px;
     border-style: none;
-    font-size: large;
-    margin-left: 35px;
+    font-size: medium;
+    /* margin-left: 35px; */
 }
 
 .eas-reset {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 8px;
+    border-style: none;
+    background: black;
+    color: white;
+    font-weight: bold;
 }
